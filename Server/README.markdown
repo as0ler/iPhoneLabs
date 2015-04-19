@@ -17,6 +17,7 @@ Install PIP on MacOS X:
 `
 	brew install pip
 `
+
 With PIP Run:
 
 `
