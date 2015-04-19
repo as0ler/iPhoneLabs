@@ -16,12 +16,12 @@ Install PIP on MacOS X:
 	brew install pip
 
 With PIP Run:
-	pip install blinker flask simplejson
-	sudo pip install flask-sqlalchemy
+    pip install blinker flask simplejson
+    sudo pip install flask-sqlalchemy
 
 Install CherryPy 3.2.3
-	cd Dependencies/CherryPy-3.2.3
-	sudo pip install cherrypy 
+    cd Dependencies/CherryPy-3.2.3
+    sudo pip install cherrypy 
 
 Using
 -----
