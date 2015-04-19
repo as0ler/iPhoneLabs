@@ -127,7 +127,7 @@ def usage():
 
 if __name__ == '__main__':
     port = DEFAULT_PORT
-    ssl = True
+    ssl = False
     opts, args = getopt.getopt(sys.argv[1:], "", ["ssl", "debug", "help", "port="])
     for o, a in opts:
         if o == "--help":

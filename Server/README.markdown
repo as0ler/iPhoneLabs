@@ -44,3 +44,10 @@ To run the HTTPS server on port 8443
 `
     python app.py 
 `
+
+To run the HTTPS server on port 8443
+
+`
+    python app.py --ssl 
+`
+
