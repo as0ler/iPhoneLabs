@@ -22,6 +22,11 @@ With PIP Run:
 
 `
     pip install blinker flask simplejson
+`
+
+Use "sudo" if needed:
+
+`
     sudo pip install flask-sqlalchemy
 `
 
