@@ -1,0 +1,10 @@
+<!doctype html>
+
+<title>Statement</title>
+<h1>Statement</h1>
+{% for a in accounts %}
+<p>
+{{ a.type|capitalize }} Account: {{ a.account_number }}<br/>
+Balance: {{ a.balance_formatted }}
+</p>
+{% endfor %}
