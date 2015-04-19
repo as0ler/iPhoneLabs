@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07AC873013F43AB2002A1507 /* sclogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AC872F13F43AB2002A1507 /* sclogo.png */; };
+		0DBC399E1AE3C4E500194275 /* upc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DBC399D1AE3C4E500194275 /* upc.jpg */; };
 		1D3623260D0F684500981E51 /* BankAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BankAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		07AC872F13F43AB2002A1507 /* sclogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sclogo.png; sourceTree = "<group>"; };
+		0DBC399D1AE3C4E500194275 /* upc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = upc.jpg; path = ../../../../../../../../Users/murphy/Downloads/upc.jpg; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BankAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BankAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAppDelegate.m; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0DBC399D1AE3C4E500194275 /* upc.jpg */,
 				07AC872F13F43AB2002A1507 /* sclogo.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Bank-Info.plist */,
@@ -346,6 +349,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bank" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -376,6 +381,7 @@
 				F89CC2A81328295700E89173 /* SetupPasswordViewController.xib in Resources */,
 				F89CC2B613282CC500E89173 /* CheckPasswordViewController.xib in Resources */,
 				F863A588132970040040E7AC /* StatementDetailViewController.xib in Resources */,
+				0DBC399E1AE3C4E500194275 /* upc.jpg in Resources */,
 				F83F74D91338451400B5F7CB /* Settings.bundle in Resources */,
 				07AC873013F43AB2002A1507 /* sclogo.png in Resources */,
 			);

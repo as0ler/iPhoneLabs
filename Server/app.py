@@ -24,7 +24,7 @@ jsonify = json.dumps
 | S1 | transfer complete |
 """
 
-DEFAULT_PORT = 8080
+DEFAULT_PORT = 8443
 
 def consolelog(sender):
     print " [*] %s [%s] \"%s %s\"" % (request.remote_addr, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), request.method, request.url)
@@ -127,7 +127,7 @@ def usage():
 
 if __name__ == '__main__':
     port = DEFAULT_PORT
-    ssl = False
+    ssl = True
     opts, args = getopt.getopt(sys.argv[1:], "", ["ssl", "debug", "help", "port="])
     for o, a in opts:
         if o == "--help":
@@ -137,8 +137,9 @@ if __name__ == '__main__':
             app.debug = True
         elif o == "--ssl":
             ssl = True
-            wsgiserver.CherryPyWSGIServer.ssl_certificate = "ssl/certs/server.crt"
+            wsgiserver.CherryPyWSGIServer.ssl_certificate = "ssl/certs/server.pem"
             wsgiserver.CherryPyWSGIServer.ssl_private_key = "ssl/private/server.key"
+            wsgiserver.CherryPyWSGIServer.ssl_module = "builtin"
         elif o == "--port":
             port = int(a)
 

@@ -27,6 +27,7 @@
 	[userDefaults setObject: hashedLocalPasswordSalt forKey: @"LocalPasswordSalt"];
 	[userDefaults setObject: _username forKey: @"Username"];
 	[userDefaults setObject: _password forKey: @"Password"];
+    [userDefaults setObject: password forKey: @"PIN"];
 	[userDefaults synchronize];
 
 	[_username release];
