@@ -182,8 +182,9 @@
 	
 	_navigationController = [UINavigationController new];
 	if (_navigationController != nil) {
-		[self.window addSubview: _navigationController.view];
-		[self.window makeKeyAndVisible];
+		//[self.window addSubview: _navigationController.view];
+        [self.window setRootViewController:_navigationController];
+        [self.window makeKeyAndVisible];
 	}
 
 	// If we do not have an internal password configured then we ask the user to do that first. Otherwise we

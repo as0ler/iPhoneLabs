@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		07AC873013F43AB2002A1507 /* sclogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AC872F13F43AB2002A1507 /* sclogo.png */; };
+		0D3D14131CCD1AF5007CD2BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D14121CCD1AF5007CD2BB /* Default-568h@2x.png */; };
 		0DC0BFA81AED6CD20057E7EA /* upc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0BFA71AED6CD20057E7EA /* upc.jpg */; };
 		1D3623260D0F684500981E51 /* BankAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BankAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		07AC872F13F43AB2002A1507 /* sclogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sclogo.png; sourceTree = "<group>"; };
+		0D3D14121CCD1AF5007CD2BB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0DC0BFA71AED6CD20057E7EA /* upc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upc.jpg; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BankAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAppDelegate.h; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0D3D14121CCD1AF5007CD2BB /* Default-568h@2x.png */,
 				F8E07CAA133A701C002B4500 /* Libraries */,
 				F89CC0DB1327E9E900E89173 /* ThirdPartyCode */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -350,9 +353,10 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bank" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -378,6 +382,7 @@
 				0DC0BFA81AED6CD20057E7EA /* upc.jpg in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				F8EAD4E91326772600657690 /* LoginViewController.xib in Resources */,
+				0D3D14131CCD1AF5007CD2BB /* Default-568h@2x.png in Resources */,
 				F89CC1C8132807FE00E89173 /* Errors.plist in Resources */,
 				F89CC2A81328295700E89173 /* SetupPasswordViewController.xib in Resources */,
 				F89CC2B613282CC500E89173 /* CheckPasswordViewController.xib in Resources */,
@@ -450,6 +455,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/ThirdPartyCode/ios-openssl/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.arentz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Base;
 				PROVISIONING_PROFILE = "A8BD8D15-C611-483B-9957-3803A363CDE0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A8BD8D15-C611-483B-9957-3803A363CDE0";
@@ -469,6 +475,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/ThirdPartyCode/ios-openssl/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.arentz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Bank;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -477,11 +484,12 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -490,7 +498,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
